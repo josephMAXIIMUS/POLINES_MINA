@@ -27,7 +27,9 @@ import random
 con = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 #habriremos a unestro bot en telegram 
 #       943769984:AAGOjMs0T4Vu9-fuGzUcZ1fVU3YQctbupAE"
-bot = telebot.TeleBot("943769984:AAGOjMs0T4Vu9-fuGzUcZ1fVU3YQctbupAE")
+#bot = telebot.TeleBot("2144733880:AAHzAlgDJ4Vhx0dF03goBcpApbrHwn2EVs4")
+from TokenTelegram import tokenAlerta
+bot = telebot.TeleBot(tokenAlerta)
 #usaremos el id del numero a quien se le enviara 
 chat_id="1051367732"
 now = datetime.now()

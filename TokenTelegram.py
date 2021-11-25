@@ -1,0 +1,7 @@
+#token="943769984:AAGOjMs0T4Vu9-fuGzUcZ1fVU3YQctbupA
+tokenBot = ("1872585631:AAFIu-d0XrWEW0F4JAhmYEnzcTxf1DCTey4")
+
+tokenAlerta =("2144733880:AAHzAlgDJ4Vhx0dF03goBcpApbrHwn2EVs4")
+
+chat_id="1051367732"
+

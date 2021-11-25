@@ -29,12 +29,14 @@ global  now
 
 now = datetime.now()
 
-#con = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-#habrimos nuestro bot 
-#       943769984:AAGOjMs0T4Vu9-fuGzUcZ1fVU3YQctbupAE"
-bot = telebot.TeleBot("943769984:AAGOjMs0T4Vu9-fuGzUcZ1fVU3YQctbupAE")
 
-chat_id="1051367732"
+#habrimos nuestro bot 
+#bot = telebot.TeleBot("2144733880:AAHzAlgDJ4Vhx0dF03goBcpApbrHwn2EVs4")
+from TokenTelegram import *
+bot = telebot.TeleBot(tokenAlerta)
+
+#chat_id="1051367732"
+#chat_id=str (-426938410)
 
 
 
@@ -67,8 +69,7 @@ try:
 #	bot.send_message(chat_id,'....BIENVENIDO AL BOT LOS PINPOLLOS ....')
 	photo = open('/home/pi/termica/termica.png', 'rb')
         bot.send_photo(chat_id, photo)
-	
-	print "entro aqui"
+
         s=FTP(servidor)
         s.login(user, passw)
 
@@ -89,7 +90,6 @@ try:
 
 except:
 #si no hay internet ejecutara lo siguiente
-
     import serial
     from numpy import *
     import matplotlib.pyplot as plt
@@ -169,8 +169,6 @@ except:
             print "ejecutado camara termica de arduino puerto serial"
             break
 	    sys.exit()
-    #break
-	 #   conn.close()
 conn.close()
 
 

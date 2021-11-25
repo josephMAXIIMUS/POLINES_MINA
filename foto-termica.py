@@ -81,12 +81,5 @@ while 1:
         plt.savefig('/home/pi/termica/termica.png', format='png')
 	plt.show()
         print "ejecutado camara termica de arduino puerto serial"
-
-	break
-
-        print "ejecutado camara termica de arduino puerto serial"
-
-	ser.close()
-
-#print "ejecutado"
-
+        break
+        sys.exit()
